@@ -1,0 +1,11 @@
+- package_name: regions
+  pin_numpy: true
+  pin_numpy_min: '1.16'
+  test_command: pytest -p no:warnings --pyargs photutils
+  test_requires: pytest-astropy astropy numpy==1.18.4
+  python_versions:
+    '0.5':
+      - cp36
+      - cp37
+      - cp38
+      - cp39
