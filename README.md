@@ -1,6 +1,6 @@
 ## A pipeline for building wheels for Regions
 
-[![Build Status](https://dev.azure.com/larrybradley/regions-wheel-forge/_apis/build/status/larrybradley.regions-wheel-forge?branchName=master)](https://dev.azure.com/larrybradley/regions-wheel-forge/_build?definitionId=4)
+[![Build Status](https://dev.azure.com/larrybradley/regions-wheel-forge/_apis/build/status/larrybradley.regions-wheel-forge?branchName=master)](https://dev.azure.com/larrybradley/regions-wheel-forge/_build?definitionId=5)
 
 After releasing a new Regions version, update
 [autowheel.yml](https://github.com/larrybradley/regions-wheel-forge/blob/master/autowheel.yml)
