@@ -1,8 +1,8 @@
 - package_name: regions
   pin_numpy: true
-  pin_numpy_min: '1.16'
+  pin_numpy_min: '1.17'
   test_command: pytest -p no:warnings --pyargs regions
-  test_requires: pytest-astropy astropy numpy==1.18.4
+  test_requires: pytest-astropy astropy numpy
   python_versions:
     '0.5':
       - cp38
