@@ -5,7 +5,6 @@
   test_requires: pytest-astropy astropy numpy==1.18.4
   python_versions:
     '0.5':
-      - cp36
-      - cp37
       - cp38
       - cp39
+      - cp310

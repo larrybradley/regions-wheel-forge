@@ -2,7 +2,7 @@ jobs:
 - job: ${{ format(parameters.name) }}
   pool:
     ${{ if eq(parameters.os, 'macosx') }}:
-      vmImage: macOS 10.14
+      vmImage: 'macOS-1015'
     ${{ if eq(parameters.os, 'linux32') }}:
       vmImage: ubuntu-latest
     ${{ if eq(parameters.os, 'linux64') }}:
@@ -32,7 +32,7 @@ jobs:
   - script: mkdir wheelhouse
     displayName: Making wheelhouse directory
 
-  - ${{ if eq(variables['Source.BranchName'], 'master') }}:
+  - ${{ if eq(variables['Source.BranchName'], 'main') }}:
 
     - script: autowheel ${{ parameters.os }} --output-dir=wheelhouse --no-build-existing --package=$(package)
       displayName: Running autowheel
@@ -40,7 +40,7 @@ jobs:
         env:
           CC: clang
 
-  - ${{ if ne(variables['Source.BranchName'], 'master') }}:
+  - ${{ if ne(variables['Source.BranchName'], 'main') }}:
 
     - script: autowheel ${{ parameters.os }} --output-dir=wheelhouse --build-existing --package=$(package)
       displayName: Running autowheel
